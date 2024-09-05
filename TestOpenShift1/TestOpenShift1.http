@@ -1,0 +1,6 @@
+@TestOpenShift1_HostAddress = http://localhost:5220
+
+GET {{TestOpenShift1_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

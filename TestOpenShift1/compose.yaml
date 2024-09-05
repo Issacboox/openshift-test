@@ -1,0 +1,8 @@
+
+services:
+  server:
+    build:
+      context: .
+      target: final
+    ports:
+      - 5000:8080

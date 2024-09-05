@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: TestOpenShift-1
+spec:
+  selector:
+    matchLabels:
+      app: TestOpenShift-1
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: TestOpenShift-1
+    spec:
+      containers:
+      - name: TestOpenShift-1
+        image: maruko.com/my-openshift-test/TestOpenShift-1:latest
+        ports:
+        - containerPort: 8080
